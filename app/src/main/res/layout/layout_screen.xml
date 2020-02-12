@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel1">
+
+
+    <ImageView
+        android:id="@+id/image_intro"
+        android:layout_width="221dp"
+        android:layout_height="150dp"
+        android:src="@drawable/intro_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"/>
+
+
+    <TextView
+        android:id="@+id/intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_intro"
+        android:text="@string/title_intro1"
+        android:fontFamily="@font/circularstd_bold"
+        android:textColor="@color/dark"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/intro_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:text="@string/intro1_desc"
+        android:layout_below="@id/intro_title"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/muli"
+        android:textSize="12dp"/>
+
+
+
+</RelativeLayout>

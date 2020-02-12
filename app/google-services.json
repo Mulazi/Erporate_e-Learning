@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "315592139020",
+    "firebase_url": "https://erporate-e-learning.firebaseio.com",
+    "project_id": "erporate-e-learning",
+    "storage_bucket": "erporate-e-learning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315592139020:android:01a2202279170634b4e929",
+        "android_client_info": {
+          "package_name": "com.erporate.e_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315592139020-f6a900ukoon8c9qh56pa7v9nc30tftk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.erporate.e_learning",
+            "certificate_hash": "5b2d73eb63e82b57814635e40096648e7304e976"
+          }
+        },
+        {
+          "client_id": "315592139020-ci1llnrb51ih3knealnel7oaa2mico4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDibHyEElLwOK6Re-zHDLXRCHhqfHe7fjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315592139020-ci1llnrb51ih3knealnel7oaa2mico4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

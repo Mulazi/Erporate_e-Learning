@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_skip"
+        android:fontFamily="@font/circularstd_bold"
+        android:textSize="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/dark" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_indicator"
+            android:layout_width="98dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/image_intro"
+            android:layout_centerHorizontal="true"
+            app:tabBackground="@drawable/indicator_selector">
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_next"
+            android:layout_marginLeft="60dp"
+            android:text="@string/next"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_started"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/get_started"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:visibility="invisible"
+        android:text="@string/get_started_txt"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

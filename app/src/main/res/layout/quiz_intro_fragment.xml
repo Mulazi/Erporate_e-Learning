@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/course_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/course_desc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/muli"
+        android:textColor="@color/dark"
+        android:textSize="12dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_desc"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_168"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difficulty_title"
+                    android:fontFamily="@font/circularstd_black"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_difficulty"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/circularstd_black"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_168"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/range_title"
+                    android:fontFamily="@font/circularstd_black"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_range"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/circularstd_black"
+                    android:textColor="@color/green"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_quiz_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin1"
+        android:text="@string/title_quiz_ready"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/circularstd_medium"
+        android:textColor="@color/dark"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="63dp"
+        android:layout_below="@id/title_quiz_ready"
+        android:background="@drawable/btn_tothe_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/to_thequiz_btn"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

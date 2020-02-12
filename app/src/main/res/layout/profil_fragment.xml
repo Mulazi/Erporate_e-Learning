@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:id="@+id/back_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnback"
+            android:layout_marginLeft="35dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profil"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/circularstd_bold"
+            android:textColor="@color/dark"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back_id"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_imag"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/user_1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_marginLeft="50dp"
+            />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lin3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/circularstd_bold"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/dark"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/male"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/muli"
+                    android:text="@string/city"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"
+                    android:layout_below="@id/lin1"/>
+                </RelativeLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_173"
+                        android:text="@string/edit_profil"
+                        android:fontFamily="@font/circularstd_bold"
+                        android:textColor="@color/white"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="30dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/muli"
+                    android:text="@string/university"
+                    android:textColor="@color/dark"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"
+                    android:layout_below="@id/lin3"/>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/rel2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/rel1">
+
+    <LinearLayout
+        android:id="@+id/lin4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/course_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courses_value"
+            android:textSize="18dp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="@font/circularstd_bold"/>
+
+        <TextView
+            android:id="@+id/level_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level_value"
+            android:textSize="18dp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/circularstd_bold"/>
+
+        <TextView
+            android:id="@+id/points_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/point_value"
+            android:textSize="18dp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/circularstd_bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/course"
+            android:textSize="18dp"
+            android:layout_marginLeft="61dp"
+            android:fontFamily="@font/muli"/>
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"
+            android:textSize="18dp"
+            android:layout_marginLeft="54dp"
+            android:fontFamily="@font/muli"/>
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/point"
+            android:textSize="18dp"
+            android:layout_marginLeft="64dp"
+            android:fontFamily="@font/muli"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_courses"
+            android:fontFamily="@font/circularstd_bold"
+            android:textSize="18dp"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_all"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/muli"
+            android:textColor="#038EF4"
+            android:textSize="12dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin7"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/lin6" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_empty"
+                android:layout_marginTop="5dp"
+                android:layout_width="173dp"
+                android:layout_height="149dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/undraw_void_3ggu_1" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tv_empty_courses"
+                android:fontFamily="@font/circularstd_bold"
+                android:textColor="@color/dark"
+                android:layout_below="@+id/img_empty"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_quiz_progress"
+            android:fontFamily="@font/circularstd_bold"
+            android:textSize="18dp"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/muli"
+                android:textColor="#038EF4"
+                android:textSize="12dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin9"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/lin8"
+        tools:ignore="DuplicateIds">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_empty"
+                android:layout_width="173dp"
+                android:layout_height="149dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/undraw_void_3ggu_1" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/tv_empty_courses"
+                android:fontFamily="@font/circularstd_bold"
+                android:textColor="@color/dark"
+                android:layout_below="@+id/img_empty"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+</RelativeLayout>
