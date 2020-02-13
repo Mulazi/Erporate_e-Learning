@@ -27,7 +27,7 @@
     <string name="have_account">Already Have an Account ? Login</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_save">Saved</string>
+    <string name="title_save">Bookmark</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_search">Search</string>
@@ -63,6 +63,7 @@
     <string name="tv_skip">Skip</string>
     <string name="tv_quiz_progress">Quiz Progress</string>
     <string name="tv_empty_courses">Your Courses is Empty</string>
+    <string name="tv_empty_quiz">Your Quiz is Empty</string>
     <string name="tv_quiz">You haven’t take any Quiz yet</string>
     <string name="tv_hi">Hi, Kamu</string>
     <string name="tv_learn">What would you learn today?</string>
@@ -122,6 +123,7 @@ It’s also a signal to my coworkers and the people around me that says “Leave
     <string name="notifications_desc">Itu sudah dijelaskan semua di dalam
 materi yang saya berikan ...</string>
     <string name="get_started_txt">Get Started</string>
-
+    <string name="logout_txt">Log Out</string>
+    <string name="coming_soon_txt">Coming Soon</string>
 </resources>
 

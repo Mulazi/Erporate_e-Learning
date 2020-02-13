@@ -45,6 +45,7 @@
             android:layout_marginLeft="30dp"
             android:layout_below="@id/image_intro"
             android:layout_centerHorizontal="true"
+            app:tabIndicatorColor="@null"
             app:tabBackground="@drawable/indicator_selector">
 
         </com.google.android.material.tabs.TabLayout>

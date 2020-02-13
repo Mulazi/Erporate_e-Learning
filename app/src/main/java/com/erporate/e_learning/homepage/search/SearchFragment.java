@@ -15,24 +15,8 @@ import android.view.ViewGroup;
 import com.erporate.e_learning.R;
 
 public class SearchFragment extends Fragment {
-
-    private SearchViewModel mViewModel;
-
-    public static SearchFragment newInstance() {
-        return new SearchFragment();
-    }
-
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.search_fragment, container, false);
     }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(SearchViewModel.class);
-        // TODO: Use the ViewModel
-    }
-
 }

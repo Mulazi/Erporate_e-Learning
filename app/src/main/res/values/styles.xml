@@ -16,4 +16,9 @@
         <item name="android:windowBackground"></item>
     </style>
 
+    <style name="BottomNavigationStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/muli</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
 </resources>

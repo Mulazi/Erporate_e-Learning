@@ -8,34 +8,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.erporate.e_learning.R;
 
+import org.w3c.dom.Text;
+
 public class ProfilFragment extends Fragment {
-
-    private ProfilViewModel mViewModel;
-    Button btnLogout;
-
-    public static ProfilFragment newInstance() {
-        return new ProfilFragment();
-    }
-
+    TextView tv_logout;
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.profil_fragment, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.profil_fragment, container, false);
 
+        tv_logout = view.findViewById(R.id.tv_logout);
+        tv_logout.setMovementMethod(new ScrollingMovementMethod());
+
+        return view;
     }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(ProfilViewModel.class);
-        // TODO: Use the ViewModel
-    }
-
 }
