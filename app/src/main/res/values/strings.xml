@@ -115,6 +115,8 @@ Kenapa jika saat kita hanya dapat memiliki satu id hanya untuk satu div, sedangk
     <string name="article_title">Coffee for Programming</string>
     <string name="content_date">05-02-2020</string>
     <string name="categories_title">Intermezzo</string>
+    <string name="total_course">12</string>
+
     <string name="news_content">Having a cup of coffee by your side when you dive into some complicated code is part of a habit. It’s almost like a trigger for me when I’m pondering a complicated problem: As soon as I sit down with a cup of coffee in my hand I know the ideas will start flowing.
 
 It’s also a signal to my coworkers and the people around me that says “Leave me alone, I need to get stuff done now.” It’s definitely a ritual for the other developers I spoke with.</string>
@@ -125,5 +127,17 @@ materi yang saya berikan ...</string>
     <string name="get_started_txt">Get Started</string>
     <string name="logout_txt">Log Out</string>
     <string name="coming_soon_txt">Coming Soon</string>
+    <string name="information_txt">Information</string>
+    <string name="save_txt">Save</string>
+    <string name="setting_txt">Setting</string>
+    <string name="account_txt">Account</string>
+    <string name="change_password_txt">Change Password</string>
+    <string name="support_txt">Support</string>
+    <string name="feedback_txt">Feedback</string>
+    <string name="help_txt">Help</string>
+    <string name="term_txt">Term and conditions</string>
+    <string name="privacy_policy_txt">Privacy Policy</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="edit_txt">Edit</string>
 </resources>
 

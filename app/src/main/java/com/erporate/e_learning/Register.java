@@ -14,30 +14,28 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.erporate.e_learning.homepage.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.SignInMethodQueryResult;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import org.w3c.dom.Text;
-
-import java.net.Inet4Address;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Register extends AppCompatActivity {
-    EditText Firstname, Lastname, Email, Password, Repassword;
+    EditText input_Email, input_Password, input_Repassword;
     TextView tvLogIn;
     Button btnRegister;
     FirebaseAuth mAuth;
     FirebaseFirestore firebaseFirestore;
     String userID;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String Fname, Lname, Email, School, Gender, City, Birth;
     public static String TAG = "TAG";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,55 +43,55 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 
-        Email     = findViewById(R.id.txt_email);
+        input_Email     = findViewById(R.id.txt_email);
         tvLogIn   = findViewById(R.id.txt_login_account);
-        Password  = findViewById(R.id.txt_password);
-        Repassword = findViewById(R.id.txt_re_password);
+        input_Password  = findViewById(R.id.txt_password);
+        input_Repassword = findViewById(R.id.txt_re_password);
         btnRegister = findViewById(R.id.btn_register);
 
         mAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
         if (mAuth.getCurrentUser()!= null) {
-            startActivity(new Intent(getApplicationContext(), Home.class));
+            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
             finish();
         }
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String email    = Email.getText().toString();
-                final String password = Password.getText().toString();
-                final String repassword = Repassword.getText().toString();
+                final String email    = input_Email.getText().toString();
+                final String password = input_Password.getText().toString();
+                final String repassword = input_Repassword.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
-                    Email.setError("Please Enter Email");
-                    Email.requestFocus();
+                    input_Email.setError("Please Enter Email");
+                    input_Email.requestFocus();
                     return;
                 }
                 if (!email.matches(emailPattern)) {
-                    Email.setError("Invalid Email Format");
-                    Email.requestFocus();
+                    input_Email.setError("Invalid Email Format");
+                    input_Email.requestFocus();
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
-                    Password.setError("Please Enter Password");
-                    Password.requestFocus();
+                    input_Password.setError("Please Enter Password");
+                    input_Password.requestFocus();
                     return;
                 }
                 if (password.length() < 6) {
-                    Password.setError("Password must be at least 6 character");
-                    Password.requestFocus();
+                    input_Repassword.setError("Password must be at least 6 character");
+                    input_Repassword.requestFocus();
                     return;
                 }
                 if (TextUtils.isEmpty(repassword)) {
-                    Repassword.setError("Please Enter re-Password");
-                    Repassword.requestFocus();
+                    input_Repassword.setError("Please Enter re-Password");
+                    input_Repassword.requestFocus();
                     return;
                 }
                 else if (!password.equals(repassword)) {
-                    Repassword.setError("Password does not match");
-                    Repassword.requestFocus();
+                    input_Repassword.setError("Password does not match");
+                    input_Repassword.requestFocus();
                     return;
                 }
 
@@ -108,6 +106,12 @@ public class Register extends AppCompatActivity {
                             DocumentReference documentReference =  firebaseFirestore.collection("user").document(userID);
                             Map<String, Object> user = new HashMap<>();
                             user.put("email", email);
+                            user.put("firstname", null);
+                            user.put("lastname", null);
+                            user.put("school", null);
+                            user.put("gender", null);
+                            user.put("city", null);
+                            user.put("birth", null);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

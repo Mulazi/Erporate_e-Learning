@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.erporate.e_learning.homepage.HomeActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -60,7 +61,7 @@ public class Login extends AppCompatActivity  {
                 FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
                 if (mFirebaseUser != null) {
                     Toast.makeText(Login.this, "You Are Logged In", Toast.LENGTH_SHORT).show();
-                    Intent ii = new Intent(Login.this, Home.class);
+                    Intent ii = new Intent(Login.this, HomeActivity.class);
                     startActivity(ii);
                 } else {
                     Toast.makeText(Login.this, "Please Login", Toast.LENGTH_LONG).show();
@@ -213,7 +214,7 @@ public class Login extends AppCompatActivity  {
                 if (task.isSuccessful()) {
                     Toast.makeText(Login.this, "Successful", Toast.LENGTH_SHORT).show();
                     FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                    startActivity(new Intent(Login.this, Home.class));
+                    startActivity(new Intent(Login.this, HomeActivity.class));
                     finish();
                     updateUI(user);
                 }

@@ -18,21 +18,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp">
 
-        <ImageButton
-            android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/btnback"
-            android:layout_marginLeft="25dp"
-            android:contentDescription="TODO" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/my_profil"
-            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
             android:fontFamily="@font/circularstd_bold"
             android:textColor="@color/dark"
             android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings_1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
 
     </RelativeLayout>
 
@@ -49,7 +52,7 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_imag"
+            android:id="@+id/profileimage_tv"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:src="@drawable/user_1"
@@ -77,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/name"
+                        android:id="@+id/name_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/name"
@@ -96,7 +99,7 @@
 
 
                 <TextView
-                    android:id="@+id/city"
+                    android:id="@+id/city_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -108,19 +111,10 @@
                     android:layout_below="@id/lin1"/>
                 </RelativeLayout>
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rectangle_173"
-                        android:text="@string/edit_profil"
-                        android:fontFamily="@font/circularstd_bold"
-                        android:textColor="@color/white"
-                        android:textSize="11dp"
-                        android:layout_marginLeft="30dp"/>
-
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/school_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -365,20 +359,6 @@
 
 </RelativeLayout>
 
-     <TextView
-        android:id="@+id/tv_logout"
-        android:layout_width="250dp"
-        android:layout_height="30dp"
-        android:text="@string/logout_txt"
-        android:textColor="#e60000"
-        android:background="@drawable/background_logout"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/rel2"
-        android:layout_marginTop="10dp"
-        android:scrollbars="vertical"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        />
+
     </RelativeLayout>
 </ScrollView>

@@ -3,20 +3,16 @@ package com.erporate.e_learning;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.erporate.e_learning.homepage.bookmark.BookmarkFragment;
-import com.erporate.e_learning.homepage.home.HomeFragment;
-import com.erporate.e_learning.homepage.notifications.NotificationsFragment;
-import com.erporate.e_learning.homepage.profil.ProfilFragment;
-import com.erporate.e_learning.homepage.search.SearchFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+
+import com.erporate.e_learning.homepage.BookmarkActivity;
+import com.erporate.e_learning.homepage.HomeActivity;
+import com.erporate.e_learning.homepage.NotificationsActivity;
+import com.erporate.e_learning.homepage.ProfilActivity;
+import com.erporate.e_learning.homepage.SearchActivity;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeActivity()).commit();
 
     }
 
@@ -42,26 +38,26 @@ public class MainActivity extends AppCompatActivity {
 
             switch (menuItem.getItemId()) {
                 case R.id.navigation_home:
-                    selectedFragment = new HomeFragment();
+                    selectedFragment = new HomeActivity();
                     break;
 
                 case R.id.navigation_search:
-                    selectedFragment = new SearchFragment();
+                    selectedFragment = new SearchActivity();
                     break;
 
 
                 case R.id.navigation_saved:
-                    selectedFragment = new BookmarkFragment();
+                    selectedFragment = new BookmarkActivity();
                     break;
 
 
                 case R.id.navigation_notifications:
-                    selectedFragment = new NotificationsFragment();
+                    selectedFragment = new NotificationsActivity();
                     break;
 
 
                 case R.id.navigation_profile:
-                    selectedFragment = new ProfilFragment();
+                    selectedFragment = new ProfilActivity();
                     break;
 
             }

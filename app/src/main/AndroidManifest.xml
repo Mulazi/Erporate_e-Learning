@@ -15,9 +15,15 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" />
-        <activity android:name=".Home" />
+        <activity android:name=".homepage.HomeActivity" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
+        <activity android:name=".EditProfile"/>
+        <activity android:name=".Setting"/>
+        <activity android:name="homepage.ProfilActivity"/>
+        <activity android:name="homepage.BookmarkActivity"/>
+        <activity android:name="homepage.SearchActivity"/>
+        <activity android:name="homepage.NotificationsActivity"/>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

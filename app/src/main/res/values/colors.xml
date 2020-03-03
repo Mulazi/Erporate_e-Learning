@@ -6,7 +6,9 @@
     <color name="dark">#232148</color>
     <color name="white">#FFFFFF</color>
     <color name="green">#45C331</color>
+    <color name="green70">#B345C331</color>
     <color name="blue">#019ADE</color>
+    <color name="blue70">#B3019ADE</color>
     <color name="tabtextcolor">#232148</color>
     <color name="tabindicator">#45C331</color>
     <color name="gray">#E6E6E6</color>

@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.erporate.e_learning.homepage.home.HomeFragment"
+        android:name="com.erporate.e_learning.homepage.HomeActivity"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/activity_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.erporate.e_learning.homepage.bookmark.BookmarkFragment"
+        android:name="com.erporate.e_learning.homepage.BookmarkActivity"
         android:label="@string/title_activity_home"
-        tools:layout="@layout/fragment_bookmark" />
+        tools:layout="@layout/activity_bookmark" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.erporate.e_learning.homepage.notifications.NotificationsFragment"
+        android:name="com.erporate.e_learning.homepage.NotificationsActivity"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/activity_notifications" />
 </navigation>
